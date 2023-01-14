@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ART</title>
+    <link rel="stylesheet" href="./css/asd.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <style>
+      body {
+        width: 100vw;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-coffee sticky-lg-top fixed-top">
+      <div class="container-fluid justify-content-start d-flex">
+        <!-- container-fluid 滿版 container 固定寬度 -->
+        <button class="btn btn-coffee d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- canvas -->
+        <div class="offcanvas offcanvas-start bg-coffee" tabindex="-1" id="offcanvas">
+          <div class="offcanvas-header"><button type="button" class="btn-close bg-light text-reset"
+              data-bs-dismiss="offcanvas"></button></div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav mb-2 mb-lg-0 m-auto flex-lg-column">
+              <li class="nav-item mx-4">
+                <a class="nav-link active" href="#">HOME</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Services</a></li>
+                  <li><a class="dropdown-item" href="#">Paintings</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link" href="#">CONTACTS</a>
+              </li>
+              <li class="nav-item dropdown mx-4">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
+                <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                  <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+            </div>
+        <!-- -----------------------navbar no1----------------- -->
+        <span id="follow" class="d-lg-inline-block d-none m-4" style="color: #fff">
+          Follow us :
+          <i class="bi bi-telephone-fill mx-2"></i>
+          <i class="bi bi-twitter mx-2"></i>
+          <i class="bi bi-github mx-2"></i>
+        </span>
+        <a class="navbar-brand ms-3 m-lg-auto" href="#"><img src="https://picsum.photos/180/50/?random=10" /></a>
+        <span class="d-lg-inline-block d-none m-4" style="color: #fff">
+          <i class="bi bi-telephone-fill mx-4"></i>
+          1-800-800-800
+        </span>
+        <a id="info" class="btn bg-coffee d-lg-none" data-bs-toggle="collapse" href="#collapseExample" role="button">
+          <i class="bi bi-three-dots-vertical"></i>
+        </a>
+        <div class="collapse float-end d-lg-none" id="collapseExample">
+          <div class="d-inline-block bg-coffee" id="infostyle">
+            Follow us :
+            <i class="bi bi-telephone-fill mx-2"></i>
+            <i class="bi bi-twitter mx-2"></i>
+            <i class="bi bi-github mx-2"></i>
+            <br />
+            <br />
+            <i class="bi bi-telephone-fill mx-4"></i>
+            1-800-800-800
+          </div>
+        </div>
+      </div>
+      <!-- ----------------------選單區 --------------------------->
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse bg-coffee" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+            <li class="nav-item mx-4">
+              <a class="nav-link active" href="#section01">HOME</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#section01">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown mx-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">SERVICES</a>
+              <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Services</a></li>
+                <li><a class="dropdown-item" href="#">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mx-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">GALLERY</a>
+              <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="#section05">CONTACTS</a>
+            </li>
+            <li class="nav-item dropdown mx-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDark1" role="button" data-bs-toggle="dropdown">PAGES</a>
+              <ul class="dropdown-menu bg-coffee dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Full-Width Gallery</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        </div>
+        </nav>
+    <!-- ------ ------ ------ ---------EVENT------- ------ ------ ------ ------ ------ ------ -->
+    <section id="section01" data-aos="fade-up" data-aos-anchor=".navbar" data-aos-duration="500">
+      <div class="container-fluid">
+        <div class="row d-flex h-100 m-0">
+          <div id="left"
+            class="col-12 col-lg-7 d-flex flex-wrap justify-content-center align-items-center align-items-lg-start align-content-lg-center flex-column">
+            <h1>ART GALLERY</h1>
+            <h5>showcasing the best works of modern art</h5>
+            <button id="more" type="button" class="btn btn-add">Learn more</button>
+          </div>
+          <div id="right" class="col-12 col-lg-5 p-0 d-flex justify-content-center align-items-center flex-column">
+            <div class="col d-flex justify-content-center align-items-center h-100 w-100">
+              <h1 class="">Event</h1>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center h-100">
+              <h1 class="d-block">Exbitions</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------ABOUT US------------------------------------>
+    <section id="section02">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="row d-flex h-100 p-0 w-100">
+          <div class="col-12 col-lg-7 p-0 h-75" data-aos="fade-left" data-aos-anchor="#section02" data-aos-duration="900">
+            <iframe class="w-100 h-100" src="https://www.youtube.com/embed/BZ2LrQtno70" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div
+            class="col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column p-3 text-center h-75"
+            style="background-color: #bbb"
+            data-aos="fade-right"
+            data-aos-anchor="#section02"
+            data-aos-duration="900">
+            <h1>About Us</h1>
+            <h3>Art Gallery is one of the country’s finest art museums welcoming over half a million visitors each year.</h3>
+            <h3>
+              Weekdays: 8:00–20:00
+              <br />
+              Weekends: 9:00–18:00
+            </h3>
+            <button type="button" id="about2" class="btn  btn-add">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------WORKS OF ARTISTS---------------------------------------------------------- -->
+    <section id="section03" data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="900">
+      <div class="container-fluid">
+        <h1 data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1100">Works Of Artists</h1>
+        <div class="row d-flex flex-nowrap flex-column flex-md-wrap flex-md-row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div data-aos="zoom-in" data-aos-anchor="#section03" data-aos-duration="1100" class="card">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=10" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1200" class="card">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=9" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1300" class="card h-50">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=8" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+            <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1500" class="card h-50">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=7" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1400" class="card h-50">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=6" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+            <div data-aos="flip-up" data-aos-anchor="#section03" data-aos-duration="1400" class="card h-50">
+              <div class="card-img-overlay">
+                <img src="https://picsum.photos/1920/1080/?random=5" />
+              </div>
+              <p class="card-text">
+                <i class="bi bi-hand-thumbs-up-fill"></i>
+                346
+                <i class="bi bi-eye-fill"></i>
+                220
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------- PAINTING TESTIMONIALS--------------------------------- -->
+    <section id="section04">
+      <div class="container-fluid">
+        <div class="row">
+          <div data-aos="fade-up-right" data-aos-anchor="#section04" data-aos-duration="1000" class="col-lg-6 h-100" id="price">
+            <h2 class="text-center d-lg-none m-2">Our Prices</h2>
+            <ul class="nav nav-tabs d-flex flex-lg-row m-lg-3 py-4 justify-content-center position-relative">
+              <li id="h2" class="fs-3 d-none d-lg-inline-flex m-2">Our Prices</li>
+              <li class="nav-item">
+                <button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#home" type="button">PAINTINGS</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#profile" type="button">GRAPHIC ARTS</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#contact" type="button">SCULPTURES</button>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home">
+                <div class="header">
+                  <div class="title">Paper/Ink</div>
+                  <div class="price">35$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Drawings in ink have been amazingly popular during the twentieth century and today they serve as the #1 decoration for
+                  homes and
+                  offices whose owners can’t afford big or full-colored paintings.
+                </div>
+                <div class="header">
+                  <div class="title">Paper/Watercolor</div>
+                  <div class="price">35$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Watercolor is the #1 painting technique we were taught at school. With the development of equipment and supplies for
+                  painting, this
+                  genre has become more varied than any other type of paintings.
+                </div>
+                <div class="header">
+                  <div class="title">Paper/Pencil</div>
+                  <div class="price">35$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Nowadays, pencil is used not only in making sketches for future paintings but also for creating absolutely spectacular
+                  artworks that
+                  compliment any interior or art collection.
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <div class="header">
+                  <div class="title">Canvas/Acrylic</div>
+                  <div class="price">95$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Acrylic paintings are the most popular among our artists, their clients, and our gallery visitors. This type of
+                  paintings is safe
+                  for your health and is less affected by heat, while expressing a vast range of colours.
+                </div>
+                <div class="header">
+                  <div class="title">Canvas/Oil</div>
+                  <div class="price">95$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Being a basic painting material for artists since ancient times, oil provides great possibilities even today. Its
+                  transparency,
+                  opacity, and translucency allow to create the most captivating color fusions.
+                </div>
+                <div class="header">
+                  <div class="title">Canvas/Mixed Technique</div>
+                  <div class="price">95$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  A mixed media painting is one which combines different painting and drawing materials and methods, rather than only one
+                  medium. Such
+                  artworks are becoming more popular due to artists’ intense creativity.
+                </div>
+              </div>
+              <div class="tab-pane fade" id="contact">
+                <div class="header">
+                  <div class="title">Granite</div>
+                  <div class="price">48$</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Granite sculptures are the oldest creative artworks based on stone carving, an activity available to humans since the
+                  dawn of times.
+                  This stone allows to create amazing and long-lasting sculptures.
+                </div>
+                <div class="header">
+                  <div class="title">Acrylic</div>
+                  <div class="price">$26</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Acrylic sculptures are the result of active technology development. This material can be found in objects and things we
+                  all use but
+                  when it comes to sculpting, acryl offers outstanding flexibility.
+                </div>
+                <div class="header">
+                  <div class="title">Steel</div>
+                  <div class="price">$26</div>
+                </div>
+                <div class="body fs-6 mt-3">
+                  Steel sculptures are a perfect option if you are looking for a way to make your home or office more attractive and
+                  sophisticated.
+                  Moreover, this material is sustainable and perfectly suites any interior/exterior.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up-left" data-aos-anchor="#section04" data-aos-duration="1000" data-aos-delay="300"
+            class="col-lg-6 h-100 my-5 m-lg-0" id="testmonials">
+            <div class="row">
+              <h2 id="test" class="text-lg-start text-center pb-5">Testimonials</h2>
+              <hr />
+              <div id="asd" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000000" data-bs-touch="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="0" class="active d-none">1</button>
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="1" class="d-none">2</button>
+                  <button type="button" data-bs-target="#asd" data-bs-slide-to="2" class="d-none">3</button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="header">
+                      <img class="mb-4" src="./quote-img-01-49x45.png" alt="" />
+                      <br />
+                      All kinds of art styles and paintings
+                    </div>
+                    <div class="body">
+                      I love your exhibitions; there are many different styles of paintings and a big range of types of art with affordable
+                      prices.
+                      Seeing so much variety of art is exciting and there’s something for everyone. I’ve never been to a gallery before, but
+                      after
+                      visiting your gallery I fell in love with fine art.
+                    </div>
+                    <div class="footer">bryan adams jouralist</div>
+                    <div class="carousel-caption d-block">
+                      <img src="https://picsum.photos/100/100/?random=10" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="header">
+                      <img class="mb-4" src="./quote-img-01-49x45.png" alt="" />
+                      <br />
+                      Great atmosphere and lots of impressive paintings
+                    </div>
+                    <div class="body">
+                      My friend is an art connoisseur, so she brought me here and I’m amazed. I got to see so many different types of
+                      beautiful art in
+                      one place, so I’m thrilled and I feel like Art Gallery helps me develop my taste for art. I think it’s nice that there’s
+                      a big
+                      range of prices and I’m considering buying a painting here.
+                    </div>
+                    <div class="footer">ANNA BROWN programmer</div>
+                    <div class="carousel-caption d-block">
+                      <img src="https://picsum.photos/100/100/?random=9" />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="header">
+                      <img class="mb-4" src="./quote-img-01-49x45.png" alt="" />
+                      <br />
+                      The best art gallery in the whole state!
+                    </div>
+                    <div class="body">
+                      I’ve been looking for art for quite some time and I went to your gallery last month. It’s a nice space, easy to walk
+                      around and
+                      some of the artists’ work is very, very nice. I’ve been very lucky today, I’ve bought four pieces. The pieces are from
+                      different
+                      coutnries. I’d recommend everyone to come here. That’s exactly what I like in your gallery.
+                    </div>
+                    <div class="footer">Jane Neddery Manager</div>
+                    <div class="carousel-caption d-block">
+                      <img src="https://picsum.photos/100/100/?random=10" />
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#asd" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#asd" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <!-------------------------------BLOG CAROUSEL--------------------------------------- -->
+    <section id="section05" data-aos="fade-right" data-aos-anchor="#section05" data-aos-duration="1400">
+      <div class="container-fluid">
+        <h3 class="text-center">Our blog</h3>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="news-slider" class="owl-carousel">
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">Google Launched Virtual Tours of 50 Museums</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      October 27, 2033
+                    </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">10 Facts From the Life of the Most Expensive Artist of Our Time</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      October 27, 2033
+                    </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="post-slide">
+                <div class="post-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1596265371388-43edbaadab94?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=501"
+                    alt="" />
+                  <a href="#" class="over-layer"><i class="fa fa-link"></i></a>
+                </div>
+                <div class="post-content d-flex flex-wrap">
+                  <h1 class="post-title w-100">
+                    <a href="#">10 Steps: How to Create a Successful Business From Your Art</a>
+                  </h1>
+                  <div class="col d-flex justify-content-between align-items-center">
+                    <span class="post-date">
+                      <i class="fa fa-clock-o"></i>
+                      October 27, 2033
+                    </span>
+                    <span>
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      43
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------------------FOOTER-------------------------------->
+    <section id="section06" class="p-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4987774.8409296945!2d0.27789576790852205!3d52.380629111184575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c92db5345b%3A0xe6fdc64e9d7c1bd6!2sBarney&#39;s%20Coffeeshop%20Amsterdam!5e0!3m2!1szh-TW!2stw!4v1672126987781!5m2!1szh-TW!2stw"
+              style="border: 0"
+              allowfullscreen="true"
+              loading="lazy"
+              class="w-100 h-100"
+              width="1000"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6 col-12 mt-5">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-12">
+                <span class="fs-2">Contact US</span>
+                <hr />
+                <p class="fs-6">
+                  <i class="bi bi-geo-alt-fill"></i>
+                  6036 Richmond hwy., Alexandria, VA, 2230
+                </p>
+                <p class="fs-6"><i class="bi bi-telephone-fill">+1 (987) 987–9487</i></p>
+                <p class="fs-6">
+                  <i class="bi bi-envelope-fill"></i>
+                  info@demolink.org
+                </p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-12">
+                <span class="fs-2">OPENING HOURS</span>
+                <hr />
+                <p class="fs-6">Weekdays: 8:00–20:00</p>
+                <p class="fs-6">Weekdays: 8:00–18:00</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12">
+              <span class="fs-2">NAVIGATION</span>
+              <hr />
+              <div class="row d-flex justify-content-between w-100">
+                <p class="fs-6 col-4">Home</p>
+                <p class="fs-6 col-4">About Us</p>
+                <p class="fs-6 col-4">Gallery</p>
+                <p class="fs-6 col-4">Services</p>
+                <p class="fs-6 col-4">Contacts</p>
+                <p class="fs-6 col-4">Pages</p>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 d-flex flex-column">
+              <span class="">
+                Follow us :
+                <i class="bi bi-telephone-fill mx-2"></i>
+                <i class="bi bi-twitter mx-2"></i>
+                <i class="bi bi-github mx-2"></i>
+              </span>
+              <span>wdf3321 &copy; 2022</span>
+              <span>PRIVACY POLICY</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/c.js"></script>
+    <script src="./js/d.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('#news-slider').owlCarousel({
+            items: 2,
+            itemsDesktop: [1200, 2],
+            itemsDesktopSmall: [992, 2],
+            itemsMobile: [768, 1],
+            navigation: true,
+            navigationText: ['<', '>'],
+            pagination: true,
+            autoPlay: false
+          })
+        })
+        AOS.init()
+    </script>
+  </body>
+</html>
